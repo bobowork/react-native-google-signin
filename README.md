@@ -117,7 +117,7 @@ signIn = async () => {
     const userInfo = await GoogleSignin.signIn();
     this.setState({ userInfo });
   } catch (error) {
-    if (error.code === statusCodes.SIGN_IN_CANCELLED) {
+    if (error.code === 13) {
       // user cancelled the login flow
     } else if (error.code === statusCodes.IN_PROGRESS) {
       // operation (f.e. sign in) is in progress already

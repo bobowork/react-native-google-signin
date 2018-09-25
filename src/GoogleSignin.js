@@ -7,10 +7,10 @@ const { RNGoogleSignin } = NativeModules;
 const IS_IOS = Platform.OS === 'ios';
 
 export const statusCodes = {
-  SIGN_IN_CANCELLED: RNGoogleSignin.SIGN_IN_CANCELLED,
-  IN_PROGRESS: RNGoogleSignin.IN_PROGRESS,
-  PLAY_SERVICES_NOT_AVAILABLE: RNGoogleSignin.PLAY_SERVICES_NOT_AVAILABLE,
-  SIGN_IN_REQUIRED: RNGoogleSignin.SIGN_IN_REQUIRED,
+  SIGN_IN_CANCELLED: 13,
+  IN_PROGRESS: 1,
+  PLAY_SERVICES_NOT_AVAILABLE: 2,
+  SIGN_IN_REQUIRED: 3,
 };
 
 class GoogleSignin {
